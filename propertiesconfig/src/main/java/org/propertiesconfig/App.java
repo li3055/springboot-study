@@ -2,14 +2,14 @@ package org.propertiesconfig;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.web.servlet.ServletComponentScan;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
 /**
  * Hello world!
  *
  */
 @SpringBootApplication 
-@ServletComponentScan
+@EnableConfigurationProperties({RedisProperties.class})  
 public class App 
 {
     public static void main( String[] args )

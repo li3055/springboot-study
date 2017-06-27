@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>futrueman</groupId>
 	<artifactId>spboot</artifactId>
@@ -15,9 +16,13 @@
 		<module>jspweb</module>
 		<module>mybatis</module>
 
-	  <module>inceptorfilter</module>
-	  <module>propertiesconfig</module>
-	  <module>peopertiesload</module>
+		<module>inceptorfilter</module>
+		<module>propertiesconfig</module>
+		<module>peopertiesload</module>
+		<module>actuator</module>
+		<module>cache</module>
+		<module>ecache</module>
+		<module>websession</module>
 	</modules>
 
 
@@ -56,6 +61,12 @@
 		</dependency>
 
 		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>
 			<scope>provided</scope>
@@ -65,7 +76,7 @@
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
@@ -79,7 +90,7 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
-		
+
 
 		<dependency>
 			<groupId>com.alibaba</groupId>
@@ -95,5 +106,5 @@
 		</dependency>
 	</dependencies>
 
-	 
+
 </project>

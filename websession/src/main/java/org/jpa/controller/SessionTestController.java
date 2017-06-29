@@ -24,7 +24,8 @@ public class SessionTestController {
 	public Object sessions(HttpServletRequest request) {
 		Map<String, Object> map = new HashMap<String, Object>();
 		map.put("sessionId", request.getSession().getId());
-		map.put("message", request.getSession().getAttribute("map"));
+		map.put("message", request.getSession().getAttribute("request Url"));
+		map.put("maxIncative", request.getSession().getMaxInactiveInterval());
 		return map;
 	}
 }

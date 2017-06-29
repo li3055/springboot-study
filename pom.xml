@@ -23,6 +23,7 @@
 		<module>cache</module>
 		<module>ecache</module>
 		<module>websession</module>
+		<module>shiro</module>
 	</modules>
 
 

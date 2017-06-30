@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.jpa.mapper.CatMapper">
+
+	<select id="findByMaster" resultType="org.jpa.bean.Cat">
+		select id,cat_name,age,mast_name from cat  where 	1=1
+		<if test="mastName.length()>0">
+		and mast_name= #{mastName}
+		</if>
+		<if test="age != null">
+		and age > #{age}
+		</if>
+		
+	</select>
+
+</mapper>

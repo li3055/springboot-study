@@ -42,4 +42,9 @@ public class Cat {
 		this.age = age;
 	}
 
+	@Override
+	public String toString() {
+		return "Cat [id=" + id + ", catName=" + catName + ", mastName=" + mastName + ", age=" + age + "]";
+	}
+
 }

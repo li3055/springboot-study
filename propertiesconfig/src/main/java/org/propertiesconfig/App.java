@@ -9,7 +9,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
  *
  */
 @SpringBootApplication 
-@EnableConfigurationProperties({RedisProperties.class})  
+//@EnableConfigurationProperties({RedisProperties.class})  
 public class App 
 {
     public static void main( String[] args )

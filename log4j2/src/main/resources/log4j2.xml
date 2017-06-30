@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<configuration status="error">
+
+  <Properties>
+        <Property name="logDir">/home/kylin/log/knight/spring_log</Property>
+    </Properties>
+    <!--先定义所有的appender-->
+    <appenders>
+        <!--这个输出控制台的配置-->
+        <Console name="Console" target="SYSTEM_OUT">
+            <!--控制台只输出level及以上级别的信息（onMatch），其他的直接拒绝（onMismatch）-->
+            <ThresholdFilter level="INFO" onMatch="ACCEPT" onMismatch="DENY"/>
+            <!--这个都知道是输出日志的格式-->
+            <PatternLayout pattern="[%p] [%d{yyyy-MM-dd HH:mm:ss}] [%c:%L] - %m%n"/>
+        </Console>
+        
+         <!--这个会打印出所有的信息，每次大小超过size，则这size大小的日志会自动存入按年份-月份建立的文件夹下面并进行压缩，作为存档-->
+        <RollingFile name="RollingFile" fileName="${logDir}/log.log"
+                     filePattern="${logDir}/$${date:yyyy-MM}/log-%d{MM-dd-yyyy}-%i.log.gz">
+          <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="NEUTRA"/>
+            <PatternLayout pattern="[%p] [%d{yyyy-MM-dd HH:mm:ss}] [%c:%L] - %m%n"/>
+            <SizeBasedTriggeringPolicy size="10 MB"/>
+             <DefaultRolloverStrategy max="31"/>
+        </RollingFile>
+        
+       <!--这个输出控制台的配置  ${catalina.home}-->
+        <RollingFile name="RollingErrorFile" fileName="${logDir}/error.log"
+                     filePattern="${logDir}/$${date:yyyy-MM}/error-%d{MM-dd-yyyy}-%i.log.gz">
+                       <ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="[%p] [%d{yyyy-MM-dd HH:mm:ss}] [%c:%L] - %m%n"/>
+            <SizeBasedTriggeringPolicy size="1MB"/>
+             <DefaultRolloverStrategy max="31"/>
+        </RollingFile>
+
+       
+        
+    </appenders>
+    <!--然后定义logger，只有定义了logger并引入的appender，appender才会生效-->
+    <loggers>
+        <!--建立一个默认的root的logger-->
+        <root level="trace">
+            <appender-ref ref="Console"/>
+            <appender-ref ref="RollingFile"/>
+            <appender-ref ref="RollingErrorFile"/>
+        </root>
+    </loggers>
+</configuration>

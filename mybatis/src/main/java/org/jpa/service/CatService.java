@@ -17,8 +17,10 @@ public class CatService {
 
  	public void save(Cat cat) {
 		catMapper.save(cat);
-
 	}
+ 	public Cat findByMaster(Cat catQuery) {
+ 		return 	catMapper.findByMaster(catQuery);
+ 	}
 
 	public void delete(Integer id) {
 		catMapper.delete(id);

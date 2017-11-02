@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="peopertiesload:war">
+    <output-path>$PROJECT_DIR$/peopertiesload/target</output-path>
+    <root id="archive" name="peopertiesload.war">
+      <element id="artifact" artifact-name="peopertiesload:war exploded" />
+    </root>
+  </artifact>
+</component>

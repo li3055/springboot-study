@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="activemq" />
+        <module name="actuator" />
+        <module name="cache" />
+        <module name="druid-filter" />
+        <module name="ecache" />
+        <module name="global" />
+        <module name="helloworld" />
+        <module name="hotloader" />
+        <module name="jpa" />
+        <module name="jspweb" />
+        <module name="log4j2" />
+        <module name="logback" />
+        <module name="mybatis" />
+        <module name="peopertiesload" />
+        <module name="propertiesconfig" />
+        <module name="rabbitMQ" />
+        <module name="shiro" />
+        <module name="websession" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="activemq" target="1.6" />
+      <module name="actuator" target="1.6" />
+      <module name="cache" target="1.6" />
+      <module name="druid-filter" target="1.6" />
+      <module name="ecache" target="1.6" />
+      <module name="global" target="1.6" />
+      <module name="helloworld" target="1.6" />
+      <module name="hotloader" target="1.6" />
+      <module name="jpa" target="1.6" />
+      <module name="jspweb" target="1.6" />
+      <module name="log4j2" target="1.6" />
+      <module name="logback" target="1.6" />
+      <module name="mybatis" target="1.6" />
+      <module name="peopertiesload" target="1.6" />
+      <module name="propertiesconfig" target="1.6" />
+      <module name="rabbitMQ" target="1.6" />
+      <module name="shiro" target="1.6" />
+      <module name="spboot" target="1.6" />
+      <module name="websession" target="1.6" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

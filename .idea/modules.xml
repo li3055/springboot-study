@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/activemq/activemq.iml" filepath="$PROJECT_DIR$/activemq/activemq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/actuator/actuator.iml" filepath="$PROJECT_DIR$/actuator/actuator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cache/cache.iml" filepath="$PROJECT_DIR$/cache/cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/druid-filter/druid-filter.iml" filepath="$PROJECT_DIR$/druid-filter/druid-filter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ecache/ecache.iml" filepath="$PROJECT_DIR$/ecache/ecache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/global/global.iml" filepath="$PROJECT_DIR$/global/global.iml" />
+      <module fileurl="file://$PROJECT_DIR$/helloworld/helloworld.iml" filepath="$PROJECT_DIR$/helloworld/helloworld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hotloader/hotloader.iml" filepath="$PROJECT_DIR$/hotloader/hotloader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jpa/jpa.iml" filepath="$PROJECT_DIR$/jpa/jpa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jspweb/jspweb.iml" filepath="$PROJECT_DIR$/jspweb/jspweb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/log4j2/log4j2.iml" filepath="$PROJECT_DIR$/log4j2/log4j2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/logback/logback.iml" filepath="$PROJECT_DIR$/logback/logback.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis/mybatis.iml" filepath="$PROJECT_DIR$/mybatis/mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/peopertiesload/peopertiesload.iml" filepath="$PROJECT_DIR$/peopertiesload/peopertiesload.iml" />
+      <module fileurl="file://$PROJECT_DIR$/propertiesconfig/propertiesconfig.iml" filepath="$PROJECT_DIR$/propertiesconfig/propertiesconfig.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rabbitMQ/rabbitMQ.iml" filepath="$PROJECT_DIR$/rabbitMQ/rabbitMQ.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shiro/shiro.iml" filepath="$PROJECT_DIR$/shiro/shiro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spboot.iml" filepath="$PROJECT_DIR$/spboot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/websession/websession.iml" filepath="$PROJECT_DIR$/websession/websession.iml" />
+    </modules>
+  </component>
+</project>

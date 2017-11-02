@@ -25,12 +25,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class App {
 	public static void main(String[] args) throws SQLException, IOException, InterruptedException, InvalidConfigurationException, XMLParserException {
 		SpringApplication.run(App.class, args);
-		List<String> warnings = new ArrayList<String>();
+		/*List<String> warnings = new ArrayList<String>();
 		boolean overwrite = true;
 		ConfigurationParser cp = new ConfigurationParser(warnings);
 		Configuration config = cp.parseConfiguration(Generator.class.getResourceAsStream("/generator/generatorConfig.xml"));
 		DefaultShellCallback callback = new DefaultShellCallback(overwrite);
 		MyBatisGenerator myBatisGenerator = new MyBatisGenerator(config, callback, warnings);
-		myBatisGenerator.generate(null);
+		myBatisGenerator.generate(null);*/
 	}
 }

@@ -21,9 +21,9 @@ public class Genrate {
 		boolean overwrite = true;
 		ConfigurationParser cp = new ConfigurationParser(warnings);
 		
-//		File file = new File("classpath:generatorConfig.xml");
-//		InputStream is = new FileInputStream(file);
-		InputStream is = Class.forName(Genrate.class.getName()).getResourceAsStream("/generatorConfig.xml");
+ 	/*File file = new File("classpath:generatorConfig.xml");
+ 	InputStream is = new FileInputStream(file);*/
+	 	InputStream is = Class.forName(Genrate.class.getName()).getResourceAsStream("/generatorConfig.xml");
 		Configuration config = cp.parseConfiguration(is);
 		DefaultShellCallback callback = new DefaultShellCallback(overwrite);
 		MyBatisGenerator myBatisGenerator = new MyBatisGenerator(config, callback, warnings);

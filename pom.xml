@@ -27,7 +27,9 @@
 		<module>log4j2</module>
 		<module>logback</module>
 		<module>rabbitMQ</module>
-		
+
+
+		<module>activemq</module>
 	</modules>
 
 
